@@ -1,6 +1,6 @@
 ---
 title: Hello World
-date: '2015-05-01T22:12:03.284Z'
+date: '2015-05-07T22:12:03.284Z'
 ---
 
 This is my first post on my new fake blog! How exciting!
@@ -17,5 +17,24 @@ Oh, and here's a great quote from this Wikipedia on
 > wrapped in plastic, and vacuum packed. From the salt curing process, the
 > salted duck eggs have a briny aroma, a gelatin-like egg white and a
 > firm-textured, round yolk that is bright orange-red in color.
+
+```javascript
+import React from 'react'
+
+import Layout from '../components/Layout'
+import SEO from '../components/seo'
+
+class NotFoundPage extends React.Component {
+  render() {
+    return (
+      <Layout location={this.props.location}>
+        <SEO title="404: Not Found" />
+        <h1>Not Found</h1>
+        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+      </Layout>
+    )
+  }
+}
+```
 
 ![Chinese Salty Egg](./salty_egg.jpg)
