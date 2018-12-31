@@ -1,12 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "the-boring-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "A boring blog powered by Gatsby and Markdown",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "author": "Canaan Seaton <cmseaton42@gmail.com>",
   "dependencies": {
     "gatsby": "^2.0.76",
     "gatsby-image": "^2.0.22",
@@ -52,12 +49,11 @@
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
-    "dev": "gatsby develop",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
+    "dev": "gatsby develop --open",
+    "start": "npm run dev",
     "build": "gatsby build",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
   }
