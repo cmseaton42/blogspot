@@ -18,7 +18,7 @@ Oh, and here's a great quote from this Wikipedia on
 > salted duck eggs have a briny aroma, a gelatin-like egg white and a
 > firm-textured, round yolk that is bright orange-red in color.
 
-```javascript
+```jsx
 import React from 'react'
 
 import Layout from '../components/Layout'
@@ -36,5 +36,3 @@ class NotFoundPage extends React.Component {
   }
 }
 ```
-
-![Chinese Salty Egg](./salty_egg.jpg)
