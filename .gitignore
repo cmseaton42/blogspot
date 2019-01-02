@@ -71,3 +71,6 @@ yarn-error.log
 
 # VSCode files
 .vscode/
+
+# Ignore package-lock.json
+package-lock.json
