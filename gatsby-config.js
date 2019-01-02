@@ -1,14 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    title: `A Boring Blog`,
+    author: `Canaan Seaton`,
+    description: `A boring blog for interested automaters.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `cmseaton42`,
     },
   },
-  plugins: [{
+  plugins: [
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
@@ -25,7 +26,8 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [{
+        plugins: [
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
@@ -40,8 +42,8 @@ module.exports = {
           {
             resolve: 'gatsby-remark-prismjs',
             options: {
-              showLineNumbers: true
-            }
+              showLineNumbers: true,
+            },
           },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
